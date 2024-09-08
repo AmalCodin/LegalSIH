@@ -1,6 +1,20 @@
-// src/pages/Contact.jsx
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Contact.css';
+
+const testimonialsData = [
+  {
+    name: "Noel Joseph Varghese",
+    text: "This platform has transformed the way we handle legal research. It's fast, intuitive, and incredibly useful.",
+  },
+  {
+    name: "Priya Mohan",
+    text: "I can't believe how much time I've saved using this tool. Highly recommended for anyone in the legal field!",
+  },
+  {
+    name: "Suresh Gopi",
+    text: "The best legal research assistant I've ever used. It helps me streamline all my tasks in no time.",
+  },
+];
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -8,6 +22,15 @@ const Contact = () => {
     email: '',
     message: '',
   });
+
+  const [currentTestimonialIndex, setCurrentTestimonialIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentTestimonialIndex((prevIndex) => (prevIndex + 1) % testimonialsData.length);
+    }, 4000); // Change slide every 4 seconds
+    return () => clearInterval(interval);
+  }, []);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -19,7 +42,6 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission logic here
     alert('Thank you for your message!');
     setFormData({ name: '', email: '', message: '' });
   };
@@ -42,7 +64,16 @@ const Contact = () => {
             <p>(123) 456-7890</p>
           </div>
         </div>
+
+        <div className="testimonials-section">
+          <h2>What Our Clients Say</h2>
+          <div className="testimonial-slide">
+            <p>"{testimonialsData[currentTestimonialIndex].text}"</p>
+            <h4>- {testimonialsData[currentTestimonialIndex].name}</h4>
+          </div>
+        </div>
       </div>
+
       <div className="contact-form">
         <div className="form-container">
           <h2>Send Us a Message</h2>
