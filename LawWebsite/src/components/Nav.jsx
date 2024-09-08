@@ -4,16 +4,18 @@ import './Nav.css';
 export default function Nav(props) {
   return (
     <nav className="navbar">
+      <div className="logo">LegalHub</div>
       <ul className="nav-links">
         <Link to="/">
           <li>Home</li>
         </Link>
-        <Link to="/currencies">
+        <Link to="/Explore">
           <li>Explore</li>
-        </Link>
-        <Link to="/about">
-          <li>Search Engine</li>
           </Link>
+        <Link to="/currencies">
+          <li>Search Engine</li>
+        </Link>
+
           <Link to="/contact">
           <li>Contact Us</li>
           </Link>
@@ -29,4 +31,3 @@ export default function Nav(props) {
 
   );
 }
-
