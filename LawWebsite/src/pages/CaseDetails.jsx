@@ -55,7 +55,7 @@ const CaseDetails = () => {
           className="case-tile"
           onClick={() => handleTileClick(caseItem)}
         >
-          {caseItem.title}
+          <strong>{caseItem.title}</strong>
         </div>
       ))}
 

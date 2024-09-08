@@ -53,7 +53,7 @@ const Contact = () => {
           <h1>Contact Us</h1>
           <div className="contact-item">
             <i className="fas fa-map-marker-alt"></i>
-            <p>123 Legal Lane, Lawtown, CA 90210</p>
+            <p>Kelambakkam - Vandalur Rd, Rajan Nagar, Chennai, Tamil Nadu 600127</p>
           </div>
           <div className="contact-item">
             <i className="fas fa-envelope"></i>
@@ -61,7 +61,7 @@ const Contact = () => {
           </div>
           <div className="contact-item">
             <i className="fas fa-phone"></i>
-            <p>(123) 456-7890</p>
+            <p>+91-9060015383</p>
           </div>
         </div>
 

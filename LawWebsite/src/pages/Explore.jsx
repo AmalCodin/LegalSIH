@@ -159,7 +159,7 @@ const Explore = () => {
             onClick={() => handleTileClick(caseItem)}
           >
             <img src={caseItem.image} alt={caseItem.title} className="case-image" />
-            <div className="case-title">{caseItem.title}</div>
+            <div className="case-title"><strong>{caseItem.title}</strong></div>
           </div>
         ))}
       </div>

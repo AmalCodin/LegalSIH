@@ -1,38 +1,51 @@
-// src/components/Home.js
 import React from 'react';
 import './Home.css';
 
 export default function Home() {
   return (
     <div className="home-container">
-      <section className="intro">
-        <h1>AI-Driven Legal Research Engine</h1>
-        <p>
-          Welcome to our AI-powered platform designed to assist judges, lawyers, 
-          and legal researchers in finding relevant legal references, laws, and past cases efficiently.
-        </p>
-      </section>
-
-      <section className="how-it-works">
-        <h2>How It Works</h2>
-        <div className="card">
-          <ol>
-            <li>Enter case-related information in our simple input forms.</li>
-            <li>Our system uses machine learning to match your input with relevant legal cases and laws.</li>
-            <li>Receive legal references, case summaries, and suggestions for relevant laws.</li>
-          </ol>
+      <section className="hero-banner">
+        <div className="hero-content">
+          <h1>Welcome to LegalHub</h1>
+          <p>AI-Driven Legal Research Engine for streamlined, intelligent legal case research.</p>
+          <a href="#features" className="hero-button">Explore Features</a>
         </div>
       </section>
 
-      <section className="features-overview">
-        <h2>Features Overview</h2>
-        <div className="card">
-          <ul>
-            <li>ML-powered case matching for legal research.</li>
-            <li>Smart legal rule suggestions based on case type and jurisdiction.</li>
-            <li>User-friendly forms for quick input of case details.</li>
-          </ul>
+      <section className="about">
+        <h2>What We Offer</h2>
+        <p>LegalHub provides judges, lawyers, and researchers with an AI-powered platform to quickly locate relevant laws, past rulings, and case summaries. Our intuitive interface and powerful algorithms ensure timely legal insights.</p>
+      </section>
+
+      <section className="process">
+        <h2>Our Process</h2>
+        <div className="steps-container">
+          <div className="step">
+            <img src="https://cdn-icons-png.flaticon.com/512/2912/2912872.png" alt="Step 1" />
+            <h3>Input Information</h3>
+            <p>Fill out the case details and tags for more accurate results.</p>
+          </div>
+          <div className="step">
+            <img src="https://i0.wp.com/bdtechtalks.com/wp-content/uploads/2019/11/human-brain-gears.jpg?fit=4300%2C2580&ssl=1" alt="Step 2" />
+            <h3>AI Analysis</h3>
+            <p>Our AI processes legal data and provides case summaries and relevant laws.</p>
+          </div>
+          <div className="step">
+            <img src="https://banner2.cleanpng.com/20240114/xfz/transparent-icon-justice-balance-fairness-scales-symbolic-image-representing-justice-balance-1710923312054.webp" alt="Step 3" />
+            <h3>Receive Results</h3>
+            <p>View summarized legal information and download your reports.</p>
+          </div>
         </div>
+      </section>
+
+      <section id="features" className="features">
+        <h2>Core Features</h2>
+        <ul>
+          <li>AI-powered legal data aggregation.</li>
+          <li>Tailored case suggestions and legal precedents.</li>
+          <li>Case predictions using historical data.</li>
+          <li>Regional and multilingual support for Indian courts.</li>
+        </ul>
       </section>
     </div>
   );
