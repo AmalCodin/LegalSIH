@@ -1,6 +1,9 @@
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #f0f4f8;
+  background-image: url('https://w0.peakpx.com/wallpaper/248/213/HD-wallpaper-abstract-texture-wood.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   margin: 0;
   padding: 0;
 }
@@ -13,7 +16,7 @@ body {
 
 /* Hero Banner */
 .hero-banner {
-  background-image: url('https://png.pngtree.com/background/20231017/original/pngtree-stack-of-law-books-with-courtroom-scales-picture-image_5590662.jpg');
+  background-image: url('https://img.pikbest.com/wp/202348/scales-of-justice-png-golden-as-a-legal-symbol-3d-illustration-on-black-paper-background-with-an-embossed-sign_9778217.jpg!w700wp');
   background-size: cover;
   background-position: center;
   padding: 100px 20px;
@@ -36,12 +39,16 @@ body {
   margin-bottom: 40px;
 }
 
-.hero-banner .hero-button {
+.hero-button {
+  background: linear-gradient(to right, rgb(173, 91, 56), rgb(146, 51, 4));
   padding: 15px 30px;
-  background-color: #59adf1;
   color: white;
   text-decoration: none;
   border-radius: 5px;
+}
+
+.hero-button:hover {
+  background: linear-gradient(to right, rgb(136, 45, 0), rgb(5, 5, 5));
 }
 
 /* Sections */
@@ -53,14 +60,38 @@ section {
   text-align: center;
 }
 
+.about h2, .process h2 {
+  font-size: 2.5rem; /* Increased font size for headings */
+  margin-bottom: 20px;
+}
+
+.about p, .process p {
+  font-size: 1.4rem; /* Increased font size for paragraphs */
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 .steps-container {
   display: flex;
   justify-content: space-around;
-  margin-top: 40px;
+  flex-wrap: wrap; /* Allows wrapping for smaller screens */
+  gap: 20px; /* Space between cards */
+}
+
+.step {
+  background: rgba(255, 255, 255, 0.15); /* Subtle transparent background to blend with wooden background */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  max-width: 300px;
+  flex: 1;
+  text-align: center;
 }
 
 .step img {
-  max-width: 150px;
+  max-width: 150px; /* Adjust image size */
+  height: auto; /* Maintain aspect ratio */
   margin-bottom: 20px;
 }
 
@@ -70,6 +101,6 @@ section {
 }
 
 .features li {
-  font-size: 1.2rem;
+  font-size: 1.4rem; /* Increased font size for features */
   margin: 10px 0;
 }

@@ -6,15 +6,15 @@ export default function Home() {
     <div className="home-container">
       <section className="hero-banner">
         <div className="hero-content">
-          <h1>Welcome to LegalHub</h1>
+          <h1>Welcome to ConciseLaw</h1>
           <p>AI-Driven Legal Research Engine for streamlined, intelligent legal case research.</p>
-          <a href="#features" className="hero-button">Explore Features</a>
+          <a href="#what-we-offer" className="hero-button">Explore Features</a>
         </div>
       </section>
 
-      <section className="about">
+      <section id="what-we-offer" className="about">
         <h2>What We Offer</h2>
-        <p>LegalHub provides judges, lawyers, and researchers with an AI-powered platform to quickly locate relevant laws, past rulings, and case summaries. Our intuitive interface and powerful algorithms ensure timely legal insights.</p>
+        <p>ConciseLaw provides judges, lawyers, and researchers with an AI-powered platform to quickly locate relevant laws, past rulings, and case summaries. Our intuitive interface and powerful algorithms ensure timely legal insights.</p>
       </section>
 
       <section className="process">

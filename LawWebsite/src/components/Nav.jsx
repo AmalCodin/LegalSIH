@@ -4,7 +4,7 @@ import './Nav.css';
 export default function Nav(props) {
   return (
     <nav className="navbar">
-      <div className="logo">LegalHub</div>
+      <div className="logo">ConciseLaw</div>
       <ul className="nav-links">
         <Link to="/">
           <li>Home</li>

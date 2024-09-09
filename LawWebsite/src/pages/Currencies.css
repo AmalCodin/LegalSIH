@@ -59,7 +59,7 @@ input::placeholder {
 
 button {
   font-family: 'Poppins', sans-serif;
-  background-color: rgb(0, 58, 128);
+  background: linear-gradient(to right, rgb(114, 42, 11), rgb(139, 54, 12));
   color: white;
   padding: 10px 20px;
   border: none;
